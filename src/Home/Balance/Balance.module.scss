@@ -1,0 +1,76 @@
+.balanceCategories {
+   margin-top: 30px;
+   display: grid;
+   grid-template-areas: 
+   "b c"
+   "l l";
+   grid-template-columns: 1fr 1fr;
+   gap: 15px;  
+}
+.bc {
+   max-width: 235px;
+   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.161);
+   border-radius: 10px;
+   min-height: 235px;
+}
+.balance {
+   grid-area: b;
+   background: #251F47;
+   color: #FFFFFF;
+   display: flex;
+   flex-direction: column;
+   padding: 9px;
+   border-radius: 15px;
+   &_title_block {
+      display: flex;
+   }
+   &_img {
+      height: 16px;
+   }
+   &_title {
+      margin: 0 0 0 8px;
+      display: inline-flex;
+      align-items: center;
+   }
+   &_count {
+      margin: 10px 0 0 0;
+      font-size: 24px;
+      line-height: 27px;
+   }
+}
+.categories {
+   grid-area: c;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.transaction {
+   margin: 10px 0 0 0;
+   height: 100%;
+   &_latest {
+      padding: 0 0 25px 0;
+      font-size: 16px;
+      line-height: 12px;
+   }
+   &_item {
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      img {
+         height: 20px;
+         padding: 0 10px 0 0;
+      }
+   }
+   &_item:not(:first-child) {
+      margin: 15px 0 0 0;
+   }
+}
+.area_chart {
+   grid-area: l;
+   padding: 8px 22px 0px 17px;
+   height:40vh;
+   display: flex;
+   justify-content: center;
+   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.161);
+   border-radius: 10px;
+}

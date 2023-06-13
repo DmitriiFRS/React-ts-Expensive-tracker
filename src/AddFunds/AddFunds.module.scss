@@ -1,0 +1,164 @@
+@mixin inputs {
+   border: 0.5px solid #251F47;
+   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.161);
+   border-radius: 5px;
+   padding: 6px 0 6px 20px;
+}
+.container {
+   height: 400px;
+}
+.expense {
+   padding: 12px 13px 11px 13px;
+   margin: 34px 0 0px 0;
+   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.161);
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+   &_title_block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+   }
+   &_title_img {
+      background: #251F47;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   &_title {
+      font-size: 22px;
+      line-height: 30px;
+      color: #251F47;
+   }
+   &_input {
+      margin: 27px 0 0 0;
+   }
+   &_input_title {
+      font-size: 18px;
+      line-height: 24px;
+      color: #251F47;
+   }
+   &_input_field {
+      margin: 7px 0 0 0;
+      @include inputs;
+      width: 100%;
+      font-size: 16px;
+      line-height: 18px;
+      color: #333333;
+   }
+   &_valueDate {
+      margin: 13px 0 0 0;
+      display: grid;
+      grid-template-columns: 35% 59%;
+      gap: 26px;
+   }
+   &_value {
+      position: relative;
+      & > *:not(:first-child) {
+         margin: 7px 0 0 0;
+      }
+   }
+   &_value_title {
+      font-size: 18px;
+      line-height: 24px;
+      color: #251F47;
+   }
+   &_value_input {
+      @include inputs;
+      max-width: 100%;
+      color: #333333;
+   }
+   &_value_dollar {
+      position: absolute;
+      left: 5px;
+      top: 30px;
+      font-size: 20px;
+      opacity: 0.7;
+   }
+   &_date {
+      position: relative;
+      & > *:not(:first-child) {
+         margin: 7px 0 0 0;
+      }
+   }
+   &_date_title {
+      font-size: 18px;
+      line-height: 24px;
+      color: #251F47;
+   }
+   &_date_field {
+      @include inputs;
+      width: 100%;
+      padding: 6px 0 6px 28px;
+      color: #333333;
+   }
+   &_date_calendar {
+      padding: 5px;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      background: inherit;
+      img {
+         height: 16px;
+      }
+   }
+   &_category {
+      margin: 13px 0 0 0;
+      & > *:not(:first-child) {
+         margin: 7px 0 0 0;
+      }
+   }
+   &_category_title {
+      font-size: 18px;
+      line-height: 24px;
+      color: #251F47;
+   }
+   &_category_dropdown {
+      @include inputs;
+      font-size: 15px;
+      width: 100%;
+      color: #333333;
+   }
+   &_add {
+      margin: 26px auto 0 auto;
+      border: 1px solid #000;
+      display: flex;
+      width: 100%;
+      max-width: 156px;
+      justify-content: center;
+      align-items: center;
+      padding: 3px 0;
+      color: #FFFFFF;
+      background: #251F47;
+      box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.161);
+      border-radius: 30px;
+   }
+   &_add_img {
+      height: 16px;
+   }
+   &_add_title {
+      margin: 0 0 0 7px;
+      font-size: 16px;
+      line-height: 24px;
+   }
+}
+.calendar_container {
+   position: absolute;
+   top: -140px;
+   right: 0px;
+   max-width: 260px;
+   transition: 0.3s;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.split {
+   max-height: 500px;
+}

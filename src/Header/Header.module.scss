@@ -1,0 +1,19 @@
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 70px;
+   background: #251F47;
+   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.161);
+   font-family: 'Poppins';
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 24px;
+   color: #FFFFFF;
+   text-transform: uppercase;
+}
+.header_back {
+   padding: 10px;
+   transform: translateX(-100px);
+   background: inherit;
+}
