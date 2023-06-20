@@ -11,9 +11,13 @@
    line-height: 24px;
    color: #FFFFFF;
    text-transform: uppercase;
+   position: relative;
 }
 .header_back {
    padding: 10px;
    transform: translateX(-100px);
    background: inherit;
+   @media(max-width: 344px) {
+      transform: translateX(-90px);
+   }
 }

@@ -1,6 +1,9 @@
 .history {
    &_container {
       padding: 0 30px;
+      @media (max-width: 470px) {
+         padding: 0 10px;
+      }
    }
    &_search {
       height: 35px;
@@ -14,7 +17,7 @@
       width: 100%;
       height: 100%;
       margin: 0 0 0 7px;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 18px;
       color: #333333;
    }
@@ -58,9 +61,16 @@
    &_tbody {
       font-size: 16px;
       line-height: 18px;
+      font-weight: 700;
       color: #4b4a4a;
+      @media(max-width: 440px) {
+         font-size: 12px;
+         line-height: 14px;
+         font-weight: 600;
+      }
    }
    &_tbody_item {
+      text-align: center;
       img {
          margin: 0 6px 0 0;
          height: 16px;
@@ -76,8 +86,39 @@ tr {
    position: relative;
    &_item {
       width: 100%;
-      max-width: 410px;
       height: 40px;
       box-shadow: 0px 1px 2px rgba(37, 31, 71, 0.1);
    }
+}
+.pagination {
+   padding: 7px 8px 7px 0px;
+   display: flex;
+   justify-content: flex-end;
+   position: relative;
+   z-index: 2;
+   &_btnsBlock > *:not(:first-child) {
+      margin: 0 0 0 5px;
+   }
+   &_btns {
+      width: 35px;
+      height: 35px;
+      border: 0.5px solid #251F47;
+      border-radius: 50%;
+      text-align: center;
+      box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.161);
+      transition: 0.25s;
+   }
+   &_active {
+      color: #fff;
+      background: #251F47;
+   }
+   &_unactive {
+      opacity: 0.35
+   }
+}
+.history_tbody_list {
+   border: 3px solid #000;
+}
+.pointer {
+   cursor: pointer;
 }

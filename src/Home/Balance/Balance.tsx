@@ -70,7 +70,6 @@ function BalanceCategories({cash, categories, history}: {cash: number, categorie
          },
       }
     }
-    console.log(history)
    function getLastTransactions() {
       const getLastValue = history.slice(-3).reverse();
       return getLastValue.map((item: any, index) => {
@@ -97,7 +96,7 @@ function BalanceCategories({cash, categories, history}: {cash: number, categorie
             </div>
          </div>
          <div className={`${styles.categories} ${styles.bc}`}>
-            {Object.values(categories).reduce((acc: number, value) => acc + value) === 0 ? (<h2>No transactions yet</h2>) : (
+            {Object.values(categories).reduce((acc: number, value) => acc + value) === 0 ? (<h2>There is no expense yet</h2>) : (
                <Doughnut options={options} data={data}/>
             )}
          </div>

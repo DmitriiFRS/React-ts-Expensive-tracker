@@ -12,6 +12,7 @@
     "@types/react-dom": "^18.2.4",
     "chart.js": "^4.3.0",
     "chartjs-plugin-datalabels": "^2.2.0",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-calendar": "^4.2.1",
     "react-chartjs-2": "^5.2.0",

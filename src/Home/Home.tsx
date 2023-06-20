@@ -7,7 +7,13 @@ import Nav from '../Nav/Nav';
 import BalanceCategories from './Balance/Balance';
 import AppStyles from '../App.module.scss';
 import { historyType } from '../History/HistoryGrid';
- function Home ({cash, categories, history}: {cash: number, categories: object, history: Array<historyType>}) {
+type homeType = {
+   cash: number,
+   categories: object,
+   history: Array<historyType>,
+   setSearchValue: Function
+}
+ function Home ({cash, categories, history, setSearchValue}: homeType) {
    const navBtns = [
       {
          border: '7px solid #06D6A0',
@@ -30,7 +36,7 @@ import { historyType } from '../History/HistoryGrid';
    ]
    return (
       <div className={styles.home}>
-         <Header title='Home'/>
+         <Header title='Home' setSearchValue={setSearchValue}/>
          <div className={AppStyles.container}>
             <Nav navBtns={navBtns}/>
             <BalanceCategories cash={cash} categories={categories} history={history}/>

@@ -8,7 +8,7 @@ import splitExpense from '../icons/splitExpense.svg';
 import AppStyles from '../App.module.scss';
 import { Outlet } from 'react-router-dom';
 import BackToHome from '../Nav/BackToHome';
-function MainFunds() {
+function MainFunds({setSearchValue}: {setSearchValue: Function}) {
    const navBtns = [
       {
          border: '7px solid #06D6A0',
@@ -31,11 +31,11 @@ function MainFunds() {
    ]
    return (
       <div className={styles.addFunds}>
-         <Header title='Add Funds' img={backArrow}/>
+         <Header title='Add Funds' img={backArrow} setSearchValue={setSearchValue}/>
          <div className={`${AppStyles.container} ${styles.container}`}>
             <Nav navBtns={navBtns}/>
             <Outlet />
-            <BackToHome />
+            <BackToHome setSearchValue={setSearchValue}/>
          </div>
       </div>
    )

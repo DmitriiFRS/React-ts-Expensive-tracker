@@ -40,7 +40,7 @@ function AreaChart({history}: {history: Array<historyType>}) {
       return data2;
    }
    const data: any = {
-      labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
       datasets: [{
          fill: true,
          data: calcLastSevenDays(),

@@ -17,6 +17,7 @@ function AddExpense({history, setHistory, categories, cash, setCash}: historyPro
    const [isCalendarOpen, setCalendarStatus] = useState<boolean>(false);
    const [date, setDate] = useState<Date>(new Date());
    const [selected, setSelect] = useState<string>('Socialize');
+   const [isValidate, setValidate] = useState<Array<boolean>>([true, true]);
    useEffect(() => {
       setCalendarStatus(false)
    },[date])
@@ -38,13 +39,24 @@ function AddExpense({history, setHistory, categories, cash, setCash}: historyPro
        };
    }, [isCalendarOpen])
    function throwExpense() {
-      setHistory([...history, {image: spend, date: dateRef.current.value, title: title, value: `$${value}`, isExpense: true}]);
+      if (title === '' || value === '') {
+         const check = [title, value].map(item => {
+            return item !== '';
+         })
+         setValidate(check);
+         setTimeout(() => {
+            setValidate([true, true])
+         }, 4000)
+         return;
+      }
+      setHistory([...history, {image: spend, date: dateRef.current.value, title: title, value: `$${value}`, isExpense: true, id: Date.now(), category: selected}]);
       setTitle('');
       setValue('');
       setCash(cash - +value);
       if (!categories) return
       categories[selected] += 1
       localStorage.setItem('categories', JSON.stringify(categories));
+      setValidate([true, true]);
    }
    function onInputValue(e: ChangeEvent<HTMLInputElement>) {
       if (value[0] === '0' && e.target.value === '00') return;
@@ -60,13 +72,14 @@ function AddExpense({history, setHistory, categories, cash, setCash}: historyPro
          </div>
          <div className={styles.expense_input}>
             <p className={styles.expense_input_title}>Title</p>
-            <input placeholder='Write your expense title' onInput={(e: ChangeEvent<HTMLInputElement>) => {setTitle(e.target.value)}} value={title} type="text" className={styles.expense_input_field} />
+            <input placeholder='Write your expense title' onInput={(e: ChangeEvent<HTMLInputElement>) => {setTitle(e.target.value)}}
+               value={title} type="text" className={`${styles.expense_input_field} ${!isValidate[0] ? styles.validation : ''}`} />
          </div>
          <div className={styles.expense_valueDate}>
             <div className={styles.expense_value}>
                <p className={styles.expense_value_title}>Value</p>
                <span className={styles.expense_value_dollar}>$</span>
-               <input onInput={onInputValue} value={value} type="number" className={styles.expense_value_input} />
+               <input onInput={onInputValue} value={value} type="number" className={`${styles.expense_value_input} ${!isValidate[1] ? styles.validation : ''}`} />
             </div>
             <div className={styles.expense_date}>
                <p className={styles.expense_date_title}>Date</p>
@@ -81,7 +94,7 @@ function AddExpense({history, setHistory, categories, cash, setCash}: historyPro
          </div>
          <div className={styles.expense_category}>
             <p className={styles.expense_category_title}>Category</p>
-            <select value={selected} onChange={(e: any) => setSelect(e.target.value)} className={styles.expense_category_dropdown}>
+            <select value={selected} onChange={(e: ChangeEvent<HTMLSelectElement>) => setSelect(e.target.value)} className={styles.expense_category_dropdown}>
                <option value="Socialize">Socialize</option>
                <option value="Bills">Bills</option>
                <option value="Shopping">Shopping</option>
