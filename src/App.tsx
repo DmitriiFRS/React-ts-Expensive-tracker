@@ -56,8 +56,8 @@ function App() {
   return (
     <div className={styles.App}>
       <Routes>
-        <Route path='' element={<Home cash={cash} categories={categories} history={history} setSearchValue={setSearchValue}/>} />
-        <Route path='Manage' element={<MainFunds setSearchValue={setSearchValue}/>}>
+        <Route path='React-ts-Expensive-tracker' element={<Home cash={cash} categories={categories} history={history} setSearchValue={setSearchValue}/>} />
+        <Route path='React-ts-Expensive-tracker/Manage' element={<MainFunds setSearchValue={setSearchValue}/>}>
           <Route path='income' element={<AddIncome cash={cash} setCash={setCash} history={history} setHistory={setHistory} cardBalance={cardBalance} setCardBalance={setCardBalance}/>}/>
           <Route path='expense' element={<AddExpense 
             history={history} 
@@ -78,7 +78,7 @@ function App() {
             categories={categories}
             resetCategories={resetCategories}/>}/>
         </Route>
-        <Route path='History' element={<History
+        <Route path='React-ts-Expensive-tracker/History' element={<History
           itemsPerPage={itemsPerPage}
           currentPage={currentPage}
           setPage={setPage}
@@ -86,7 +86,7 @@ function App() {
           setSearchValue={setSearchValue}
           filteredHistory={filteredHistory}
           currentItems={currentItems}/>} />
-        <Route path='Cards' element={<Cards
+        <Route path='React-ts-Expensive-tracker/Cards' element={<Cards
           setSearchValue={setSearchValue}
           cardBalance={cardBalance} />} />
       </Routes>

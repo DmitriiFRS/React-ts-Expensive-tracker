@@ -4,7 +4,7 @@ import styles from './Nav.module.scss';
 export default function BackToHome({setSearchValue, homeActive}: {setSearchValue: Function, homeActive?: boolean}) {
    const navigate = useNavigate();
    function backToHome() {
-      navigate('/', {replace: true});
+      navigate('/React-ts-Expensive-tracker', {replace: true});
       setSearchValue('');
    }
    return (
