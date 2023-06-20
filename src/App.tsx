@@ -56,7 +56,7 @@ function App() {
   return (
     <div className={styles.App}>
       <Routes>
-        <Route path='React-ts-Expensive-tracker' element={<Home cash={cash} categories={categories} history={history} setSearchValue={setSearchValue}/>} />
+        <Route path='React-ts-Expensive-tracker/' element={<Home cash={cash} categories={categories} history={history} setSearchValue={setSearchValue}/>} />
         <Route path='React-ts-Expensive-tracker/Manage' element={<MainFunds setSearchValue={setSearchValue}/>}>
           <Route path='income' element={<AddIncome cash={cash} setCash={setCash} history={history} setHistory={setHistory} cardBalance={cardBalance} setCardBalance={setCardBalance}/>}/>
           <Route path='expense' element={<AddExpense 
