@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-ts-Expensive-tracker/static/css/main.8079b6ce.css",
-    "main.js": "/React-ts-Expensive-tracker/static/js/main.dddd419a.js",
+    "main.js": "/React-ts-Expensive-tracker/static/js/main.cbb13fdf.js",
     "static/js/787.99d8332d.chunk.js": "/React-ts-Expensive-tracker/static/js/787.99d8332d.chunk.js",
     "static/media/visa.png": "/React-ts-Expensive-tracker/static/media/visa.53412106e5dd0cc322c5.png",
     "static/media/splitExpense.svg": "/React-ts-Expensive-tracker/static/media/splitExpense.c9c6f8b5f67695a05679aeeb09158d75.svg",
@@ -23,11 +23,11 @@
     "static/media/add.svg": "/React-ts-Expensive-tracker/static/media/add.c2def49f6341a4136b6670644f9208ad.svg",
     "static/media/Back.svg": "/React-ts-Expensive-tracker/static/media/Back.566b0f5de4d9c8564e4413a8348442ff.svg",
     "main.8079b6ce.css.map": "/React-ts-Expensive-tracker/static/css/main.8079b6ce.css.map",
-    "main.dddd419a.js.map": "/React-ts-Expensive-tracker/static/js/main.dddd419a.js.map",
+    "main.cbb13fdf.js.map": "/React-ts-Expensive-tracker/static/js/main.cbb13fdf.js.map",
     "787.99d8332d.chunk.js.map": "/React-ts-Expensive-tracker/static/js/787.99d8332d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8079b6ce.css",
-    "static/js/main.dddd419a.js"
+    "static/js/main.cbb13fdf.js"
   ]
 }
