@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/React-ts-Expensive-tracker/static/css/main.8079b6ce.css",
+    "main.js": "/React-ts-Expensive-tracker/static/js/main.dddd419a.js",
+    "static/js/787.99d8332d.chunk.js": "/React-ts-Expensive-tracker/static/js/787.99d8332d.chunk.js",
+    "static/media/visa.png": "/React-ts-Expensive-tracker/static/media/visa.53412106e5dd0cc322c5.png",
+    "static/media/splitExpense.svg": "/React-ts-Expensive-tracker/static/media/splitExpense.c9c6f8b5f67695a05679aeeb09158d75.svg",
+    "static/media/cards.svg": "/React-ts-Expensive-tracker/static/media/cards.9b55b863a9fbffd1aec0f5bb6badd911.svg",
+    "static/media/transaction.svg": "/React-ts-Expensive-tracker/static/media/transaction.fa9afc5cf1e79a1088f5cb1f27ae3a50.svg",
+    "static/media/calendar.svg": "/React-ts-Expensive-tracker/static/media/calendar.bda7cb666908ac33290fead887c6f75a.svg",
+    "static/media/history.svg": "/React-ts-Expensive-tracker/static/media/history.604f47f12a1bba16bf3f7dbf02b52453.svg",
+    "index.html": "/React-ts-Expensive-tracker/index.html",
+    "static/media/loop.svg": "/React-ts-Expensive-tracker/static/media/loop.80822cbcdd4a0972b26a0f38164fc0ee.svg",
+    "static/media/dollar.svg": "/React-ts-Expensive-tracker/static/media/dollar.45f1420a38e6b34e9656da8977ffb2ab.svg",
+    "static/media/addIncome.svg": "/React-ts-Expensive-tracker/static/media/addIncome.257c5ddc0360bcd03cbc0fa38577e355.svg",
+    "static/media/addExpense.svg": "/React-ts-Expensive-tracker/static/media/addExpense.24e5ad30ddb94412001af31256416981.svg",
+    "static/media/balanceIncome.svg": "/React-ts-Expensive-tracker/static/media/balanceIncome.688806d489f021accddcbb0e3da07781.svg",
+    "static/media/spend.svg": "/React-ts-Expensive-tracker/static/media/spend.71a9411024bed4ee882f61b6c2d39d6e.svg",
+    "static/media/balanceExpense.svg": "/React-ts-Expensive-tracker/static/media/balanceExpense.ddc0cb6141f7d7ac5c8019571ab23295.svg",
+    "static/media/expense.svg": "/React-ts-Expensive-tracker/static/media/expense.b5b66023fe5f1d10c22ae19ce1dc3c29.svg",
+    "static/media/addCash.svg": "/React-ts-Expensive-tracker/static/media/addCash.06f5a8c0cc35bde3a972806a499ed05c.svg",
+    "static/media/home.svg": "/React-ts-Expensive-tracker/static/media/home.f427e528255216a391b1d435506f09fe.svg",
+    "static/media/add.svg": "/React-ts-Expensive-tracker/static/media/add.c2def49f6341a4136b6670644f9208ad.svg",
+    "static/media/Back.svg": "/React-ts-Expensive-tracker/static/media/Back.566b0f5de4d9c8564e4413a8348442ff.svg",
+    "main.8079b6ce.css.map": "/React-ts-Expensive-tracker/static/css/main.8079b6ce.css.map",
+    "main.dddd419a.js.map": "/React-ts-Expensive-tracker/static/js/main.dddd419a.js.map",
+    "787.99d8332d.chunk.js.map": "/React-ts-Expensive-tracker/static/js/787.99d8332d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8079b6ce.css",
+    "static/js/main.dddd419a.js"
+  ]
+}
